@@ -1,0 +1,76 @@
+@import '../../../variables.global.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 952px;
+  height: 471px;
+  background-color: var(--container-color);
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  flex: 1 1;
+}
+
+.row {
+  width: 100%;
+  height: 51px;
+  background-color: var(--input-color);
+}
+
+.containerBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 13.55%;
+  bottom: 0;
+}
+
+.boxBtn {
+  padding: 0 6.805%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    height: 350px;
+  }
+
+  .boxBtn {
+    padding: 0 6% 0 3%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 280px;
+  }
+
+  .containerBtn {
+    right: 9.55%;
+  }
+
+  .boxBtn {
+    padding: 0 5px;
+  }
+
+  .row {
+    height: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  .containerBtn {
+    right: 0;
+  }
+}

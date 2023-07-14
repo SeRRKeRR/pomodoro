@@ -1,0 +1,19 @@
+.cntContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .cntContainer {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .cntContainer {
+    flex-direction: column;
+    flex: 1 1;
+    justify-content: space-between;
+    height: 100%;
+  }
+}

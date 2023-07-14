@@ -1,0 +1,102 @@
+@import '../../../../variables.global.scss';
+
+.cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 179px;
+  background-color: var(--container-color);
+}
+
+.pomodoroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 179px;
+  width: 100%;
+}
+
+.pomodoroBox {
+  display: flex;
+  align-items: center;
+  margin-top: 23px;
+}
+
+.pomodoroN,
+.pomodoroText {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.pomodoroN {
+  margin-left: 17px;
+  color: $gray99;
+}
+
+.pomodoroText {
+  padding: 9px 9px;
+  width: 100%;
+  background-color: var(--btn-orange-color);
+  color: $white;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .pomodoroN,
+  .pomodoroText {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .pomodoroN {
+    margin-left: 7px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pomodoroContainer,
+  .cnt {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pomodoroContainer,
+  .cnt {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .pomodoroN,
+  .pomodoroText {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .pomodoroN {
+    margin-left: 4px;
+  }
+
+  .svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .svgBig {
+    width: 90px;
+    height: 90px;
+  }
+
+  .cnt {
+    height: 130px;
+    min-height: auto;
+  }
+
+  .pomodoroBox {
+    margin-top: 10px;
+  }
+}

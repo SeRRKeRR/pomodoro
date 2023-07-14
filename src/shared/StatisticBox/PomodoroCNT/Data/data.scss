@@ -1,0 +1,88 @@
+@import '../../../../variables.global.scss';
+
+.data {
+  margin-bottom: 32px;
+  padding: 25px 25px;
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+  background-color: var(--container-color);
+}
+
+.day {
+  margin-bottom: 14px;
+  color: $black;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--text-color);
+}
+
+.dayText {
+  line-height: 28px;
+  color: var(--text-color);
+}
+
+.timeBox {
+  display: inline-block;
+}
+
+.time {
+  display: block;
+  color: $orangeDC;
+}
+
+@media (max-width: 1024px) {
+  .data {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    min-height: 150px;
+  }
+
+  .day {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .data {
+    margin-bottom: 0;
+    margin-right: 2.5%;
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .data {
+    margin-bottom: 20px;
+    margin-right: 0;
+    flex: 1 1;
+    max-width: none;
+    width: 100%;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 667px) {
+  .day {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .dayText {
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .data {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .data {
+    margin-bottom: 15px;
+    padding: 10px 10px;
+  }
+}

@@ -1,0 +1,47 @@
+$black: #333333;
+$orangeDC: #DC3E22;
+$orangeB7: #B7280F;
+$orangeEE: #EE735D;
+$orangeEA: #EA8979;
+$yellow: #FFDDA9;
+$greenA8: #A8B64F;
+$green89: #899441;
+$lilac: #DFDCFE;
+$blue: #C5F1FF;
+$white: #FFFFFF;
+$grayF4: #F4F4F4;
+$gray99: #999999;
+$grayC4: #C4C4C4;
+$grayDE: #DEDEDE;
+$grayE4: #E4E4E4;
+$grayEC: #ECECEC;
+
+html[data-theme='dark'] {
+  --text-color: #F4F4F4;
+  --text-white-color: #999;
+  --header-color: #333;
+  --body-color: #444;
+  --input-color: #333;
+  --container-color: #555;
+  --btn-gray-color: #333;
+  --btn-green-color: hsla(68, 41%, 31%, 1);
+  --btn-orange-color: hsla(9, 73%, 30%, 1);
+  --focus-color: hsla(36, 100%, 40%, 1);
+  --pause-color: hsla(245, 94%, 73%, 1);
+  --stop-color: hsla(194, 100%, 69%, 1);
+}
+
+html[data-theme='light'] {
+  --text-color: #333;
+  --text-white-color: #fff;
+  --header-color: #fff;
+  --body-color: #fff;
+  --input-color: #F4F4F4;
+  --container-color: #F4F4F4;
+  --btn-gray-color: #C4C4C4;
+  --btn-green-color: hsla(68, 41%, 51%, 1);
+  --btn-orange-color: hsla(9, 73%, 50%, 1);
+  --focus-color: hsla(36, 100%, 83%, 1);
+  --pause-color: hsla(245, 94%, 93%, 1);
+  --stop-color: hsla(194, 100%, 89%, 1);
+}

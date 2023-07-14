@@ -1,0 +1,127 @@
+@import '../../variables.global.scss';
+
+.statistics {
+  margin: 0 auto;
+  padding: 88px 80px 88px 80px;
+  max-width: 1440px;
+}
+
+.header {
+  margin-bottom: 2.34%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.heading {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.centralBox {
+  margin-bottom: 2.5%;
+  display: flex;
+  width: 100%;
+}
+
+.leftColumn,
+.rightColumn {
+  flex: 1 1;
+}
+
+.leftColumn {
+  margin-right: 2.49%;
+  max-width: 23.13%;
+  width: 23.13%;
+}
+
+.rightColumn {
+  width: 74.38%;
+}
+
+.boxPomodoroCNT {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .statistics {
+    padding: 50px 7.813%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .centralBox {
+    flex-direction: column;
+  }
+
+  .leftColumn {
+    margin-right: 0;
+    margin-bottom: 2.5%;
+    width: auto;
+    max-width: none;
+  }
+
+  .rightColumn {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .centralBox,
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .leftColumn {
+    display: none;
+  }
+
+  .boxPomodoroCNT {
+    margin-right: 20px;
+    display: block;
+    width: 48%;
+    max-width: 220px;
+  }
+
+  .bottomBox {
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+@media(max-width: 667px) {
+  .statistics {
+    padding: 35px 5%;
+  }
+
+  .heading {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .statistics {
+    padding: 20px 5%;
+  }
+}
+
+@media (max-width: 360px) {
+  .statistics {
+    padding: 15px 5%;
+  }
+
+  .header,
+  .centralBox {
+    margin-bottom: 15px;
+  }
+
+
+  .boxPomodoroCNT {
+    margin-right: 15px;
+  }
+}

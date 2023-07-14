@@ -1,0 +1,46 @@
+@import '../../../../variables.global.scss';
+
+.container {
+  margin: 9px 0;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  border: 3px solid $gray99;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.separator {
+  padding-bottom: 35px;
+  font-weight: 200;
+  font-size: 150px;
+  line-height: 115px;
+}
+
+.NoActive {
+  color: var(--text-color);
+}
+
+.Start {
+  color: var(--btn-green-color);
+}
+
+.Pause {
+  color: var(--btn-orange-color);
+}
+
+@media (max-width: 667px) {
+  .separator {
+    padding-bottom: 20px;
+    font-size: 100px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 360px) {
+  .separator {
+    padding-bottom: 15px;
+    font-size: 80px;
+    line-height: 65px;
+  }
+}

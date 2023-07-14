@@ -1,0 +1,99 @@
+@import "variables.global";
+
+@font-face {
+  font-family: 'SF UI Display';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: local('SF UI Display'), url('./assets/fonts/SFUIDisplay-Bold.woff2') format("woff2"),
+  url('./assets/fonts/SFUIDisplay-Bold.woff') format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: local('SF UI Display'), url('./assets/fonts/SFUIDisplay-Medium.woff2') format("woff2"),
+  url('./assets/fonts/SFUIDisplay-Medium.woff') format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local('SF UI Display'), url('./assets/fonts/SFUIDisplay-Regular.woff2') format("woff2"),
+  url('./assets/fonts/SFUIDisplay-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  src: local('SF UI Display'), url('./assets/fonts/SFUIDisplay-Light.woff2') format("woff2"),
+  url('./assets/fonts/SFUIDisplay-Light.woff') format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 200;
+  src: local('SF UI Display'), url('./assets/fonts/SFUIDisplay-Ultralight.woff2') format("woff2"),
+  url('./assets/fonts/SFUIDisplay-Ultralight.woff') format("woff");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--body-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  font-family: 'SF UI Display', serif;
+}
+
+* {
+  color: $black;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+p {
+  margin: 0 0;
+}
+
+h1, h2, h3 {
+  margin: 0 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+@media (max-width: 667px) {
+  body {
+    font-size: 13px;
+    line-height: 14px;
+  }
+}

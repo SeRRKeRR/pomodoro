@@ -1,0 +1,55 @@
+@import '../../../../variables.global.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 150px;
+  width: 86.51px;
+}
+
+.top,
+.bot {
+  text-align: center;
+  font-weight: 200;
+  font-size: 150px;
+  line-height: 150px;
+}
+
+.animationBox {
+  transition: transform 1s ease-in-out;
+}
+
+.down {
+  transform: translateY(0);
+}
+
+.up {
+  transform: translateY(-50%);
+}
+
+@media (max-width: 667px) {
+  .container {
+    height: 100px;
+    width: 58px;
+  }
+
+  .top,
+  .bot {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    height: 80px;
+    width: 46.15px;
+  }
+
+  .top,
+  .bot {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}

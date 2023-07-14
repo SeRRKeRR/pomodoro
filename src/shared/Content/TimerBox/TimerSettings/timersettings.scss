@@ -1,0 +1,154 @@
+@import '../../../../variables.global.scss';
+
+.window {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  position: fixed;
+  top: 20%;
+  padding: 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  min-height: 175px;
+  background-color: var(--body-color);
+}
+
+.form,
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  color: var(--text-color);
+}
+
+.checkbox {
+  margin-left: 15px;
+}
+
+.input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 17px 15px;
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  border: 1px solid $grayF4;
+  outline: none;
+}
+
+.input,
+.input::placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.btnBox {
+  display: flex;
+  width: 100%;
+}
+
+.btnSave {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btnSave {
+  margin-right: 25px;
+  padding: 17px 25px;
+  background-color: var(--btn-green-color);
+  color: $white;
+}
+
+.btnSave:hover {
+  background-color: $green89;
+}
+
+.btnCansel {
+  padding: 15px 23px;
+  border:  2px solid $orangeDC;
+  background-color: transparent;
+  color: $orangeDC;
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.btnCansel:hover {
+  color: $white;
+  background-color: $orangeDC;
+}
+
+.btnSave,
+.btnCansel {
+  flex: 1 1;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sliderLabel {
+  margin-right: 15px;
+  color: var(--text-color);
+}
+
+.input.noValid {
+  border-color: $orangeDC;
+}
+
+.btnSave.noValid {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.error {
+  margin-bottom: 5px;
+  line-height: 15px;
+  font-size: 11px;
+  color: $orangeDC;
+  opacity: 0;
+}
+
+.error.noValid {
+  opacity: 1;
+}
+
+@media (max-width: 667px) {
+  .container {
+    width: auto;
+  }
+
+  .input,
+  .input::placeholder,
+  .btnCansel,
+  .btnSave {
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .input {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 360px) {
+
+}

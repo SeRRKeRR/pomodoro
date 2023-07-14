@@ -1,0 +1,58 @@
+@import '../../../variables.global.scss';
+
+.switchBtn {
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  font-family: 'SF UI Display';
+}
+
+.text {
+  margin-left: 5px;
+  color: $gray99;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  transition: color 0.3s ease-in-out;
+}
+
+.moon,
+.sun {
+  fill: transparent;
+  stroke: $gray99;
+  transition-property: fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.switchBtn:hover .moon {
+  fill: $gray99;
+  stroke: $black;
+}
+
+.switchBtn:hover .moon + .text {
+  color: $black;
+}
+
+.switchBtn:hover .sun {
+  fill: $gray99;
+  stroke: $white;
+}
+
+.switchBtn:hover .sun + .text {
+  color: $white;
+}
+
+@media (max-width: 667px) {
+  .text {
+    font-size: 13px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .switchBtn {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}

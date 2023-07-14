@@ -1,0 +1,65 @@
+@import '../../../../variables.global.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.line {
+  margin-right: 3.36%;
+  flex: 1 1;
+  max-width: 86.45%;
+  height: 1px;
+  background-color: $gray99;
+}
+
+.time {
+  margin-right: 2.1%;
+  width: 80px;
+  color: var(--text-color);
+}
+
+.timeMobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .line {
+    margin-right: 2%;
+    max-width: 85.7%;
+  }
+}
+
+@media (max-width: 667px) {
+  .time {
+    width: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .line {
+    margin-right: 1%;
+    max-width: none;
+  }
+
+  .time {
+    display: none;
+  }
+
+  .timeMobile {
+    display: block;
+    width: 30px;
+    color: var(--text-color);
+  }
+}
+
+@media (max-width: 360px) {
+  .line {
+    margin-right: 0;
+  }
+
+  .timeMobile {
+    display: none;
+  }
+}

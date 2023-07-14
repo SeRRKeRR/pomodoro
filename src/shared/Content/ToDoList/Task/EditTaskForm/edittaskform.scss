@@ -1,0 +1,63 @@
+@import '../../../../../variables.global.scss';
+
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  margin-right: 10px;
+  padding: 0 0;
+  flex: 1 1;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+  font-family: 'SF UI Display';
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+.btnOk {
+  margin-right: 10px;
+}
+
+.btnOk,
+.btnNo {
+  width: 25px;
+  height: 25px;
+}
+
+.svgOk,
+.svgNo {
+  fill: $grayC4;
+  transition: fill 0.2s ease-in-out;
+}
+
+.btnOk:hover .svgOk {
+  fill: $green89;
+}
+
+.btnNo:hover .svgNo {
+  fill: $orangeDC;
+}
+
+.nonActive {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+@media (max-width: 667px) {
+  .input {
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .btnOk,
+  .btnNo {
+    width: 18px;
+    height: 18px;
+  }
+}

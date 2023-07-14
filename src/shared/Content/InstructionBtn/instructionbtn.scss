@@ -1,0 +1,36 @@
+@import '../../../variables.global.scss';
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid var(--text-color);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.text {
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 400;
+  font-family: 'SF UI Display';
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  border-color: var(--text-color);
+}
+
+.btn:hover .text {
+  color: var(--text-color);
+}
+
+.btn:hover .svg {
+  stroke: var(--text-color);
+}
+
+.svg {
+  margin-right: 3px;
+  stroke: var(--text-color);
+  transition: stroke 0.3s ease-in-out;
+}

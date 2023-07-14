@@ -1,0 +1,32 @@
+@import '../../../variables.global.scss';
+
+.container,
+.toDoList {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding-bottom: 110px;
+}
+
+.toDoList {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+@media (max-width: 667px) {
+  .container {
+    padding-bottom: 100px;
+  }
+
+  .toDoList {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,55 @@
+@import '../../../variables.global.scss';
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 15px;
+  min-width: 370px;
+  background-color: var(--input-color);
+  font-family: 'SF UI Display';
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--container-color);
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: var(--text-color);
+}
+
+.svg {
+  transform: rotate(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.active {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1000px) {
+  .btn {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 667px) {
+  .btn {
+    padding: 10px 10px;
+  }
+
+  .text {
+    font-size: 13px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    min-width: 160px;
+  }
+}

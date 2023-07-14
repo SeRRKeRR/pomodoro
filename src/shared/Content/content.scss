@@ -1,0 +1,170 @@
+@import '../../variables.global.scss';
+
+.content {
+  margin: 0 auto;
+  padding: 100px 80px 50px 80px;
+  display: flex;
+  max-width: 1440px;
+}
+
+.headingInstructions {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.instructionBox {
+  display: none;
+}
+
+.listInstructions {
+  margin-bottom: 30px;
+  padding-left: 18px;
+}
+
+.instruction::marker {
+  color: $orangeDC;
+}
+
+.instruction {
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.leftBox,
+.rightBox {
+  flex: 1 1;
+}
+
+.leftBox {
+  margin-right: 15px;
+  max-width: 510px;
+}
+
+.toDoBox {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  max-width: 370px;
+}
+
+@media (max-width: 1439px) {
+  .leftBox {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 1124px) {
+  .content {
+    padding: 50px 7.813%;
+    flex-direction: column-reverse;
+  }
+
+  .leftBox {
+    margin-right: 0;
+    display: flex;
+    max-width: none;
+    justify-content: space-between;
+  }
+
+  .instructionsBox,
+  .toDoBox {
+    flex: 0 0 48%;
+  }
+
+  .instructionsBox {
+    margin-right: 4%;
+    max-width: 500px;
+  }
+}
+
+
+@media (max-width: 667px) {
+  .content {
+    padding: 35px 5%;
+  }
+
+  .toDoBox {
+    margin-right: 30px;
+    flex: 1 1;
+  }
+
+  .leftBox {
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .instructionsBox {
+    z-index: 10;
+    display: none;
+    margin-right: 0;
+    padding: 5px 5px;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    max-width: 300px;
+    background-color: var(--container-color);
+    border: 1px solid var(--text-color);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(120%);
+  }
+
+  .headingInstructions {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .listInstructions {
+    margin-bottom: 0;
+  }
+
+  .instruction {
+    line-height: 25px;
+  }
+
+  .instructionBox {
+    display: block;
+  }
+
+  .instructionsBox.open {
+    display: block;
+  }
+
+  .instructionsBox.animation {
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 20px 5%;
+  }
+
+  .leftBox {
+    flex-direction: column;
+    min-height: 260px;
+  }
+
+  .instructionBox {
+    margin-bottom: 20px;
+    align-self: flex-end;
+  }
+
+  .toDoBox {
+    margin-right: 0;
+    max-width: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .content {
+    padding: 15px 5%;
+  }
+
+  .instructionBox {
+    margin-bottom: 15px;
+  }
+}

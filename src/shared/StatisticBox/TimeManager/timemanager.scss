@@ -1,0 +1,35 @@
+@import '../../../variables.global.scss';
+
+.timeManager {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  list-style: none;
+}
+
+.item {
+  flex: 1 1 100%;
+  background-color: $grayF4;
+}
+
+.item:not(:last-child) {
+  margin-right: 2.5%;
+}
+
+@media (max-width: 768px) {
+  .timeManager {
+    flex-direction: column;
+    flex: 1 1 48%;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}

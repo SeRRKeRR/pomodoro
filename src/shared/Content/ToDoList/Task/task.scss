@@ -1,0 +1,62 @@
+@import '../../../../variables.global.scss';
+
+.toDo {
+  position: relative;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $grayE4;
+}
+
+.toDo:last-child {
+  border-bottom: 1px solid $grayE4;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.pomodoros {
+  margin-right: 10px;
+  padding: 3px 3px;
+  border-radius: 50%;
+  border: 1px solid $grayC4;
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  font-weight: 300;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.textBox {
+  display: flex;
+  flex: 1 1;
+  margin-right: 10px;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  font-weight: 300;
+}
+
+.task {
+  color: var(--text-color);
+}
+
+.nonActive {
+  opacity: 0;
+}
+
+@media (max-width: 667px) {
+  .toDo {
+    padding: 10px 0;
+  }
+
+  .pomodoros {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+  }
+}

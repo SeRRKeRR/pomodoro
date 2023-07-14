@@ -1,0 +1,46 @@
+@import '../../../variables.global.scss';
+
+.btn {
+  display: flex;
+  align-items: center;
+  color: $orangeDC;
+  fill: currentColor;
+}
+
+.text,
+.svg {
+  transition-property: fill, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.btn:hover .svg,
+.btn:hover .text {
+  fill: $orangeB7;
+  color: $orangeB7;
+}
+
+.svg {
+  fill: $orangeDC;
+  color: $orangeDC;
+}
+
+.text {
+  margin-left: 5px;
+  color: $orangeDC;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+@media (max-width: 667px) {
+  .text {
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .svg {
+    width: 20px;
+    height: 20px;
+  }
+}

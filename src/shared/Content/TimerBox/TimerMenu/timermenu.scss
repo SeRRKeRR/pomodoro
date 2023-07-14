@@ -1,0 +1,182 @@
+@import '../../../../variables.global.scss';
+
+.box {
+  position: relative;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.timer {
+  font-weight: 200;
+  font-size: 150px;
+  line-height: 179px;
+}
+
+.btnAdd {
+  position: absolute;
+  right: 15px;
+  top: 65px;
+  background-color: var(--btn-gray-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.plus {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.plus::after,
+.plus::before {
+  position: absolute;
+  content: '';
+  top: 17px;
+  left: 24px;
+  width: 2px;
+  height: 16px;
+  background-color: $white;
+}
+
+.plus::before {
+  transform: rotate(90deg);
+}
+
+
+.task {
+  margin-bottom: 30px;
+  display: block;
+  max-width: 400px;
+  text-align: center;
+  color: $gray99;
+}
+
+.taskName {
+  color: var(--text-color);
+}
+
+.btnAdd,
+.btnStart {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btnStart {
+  margin-right: 25px;
+  padding: 19px 50px;
+  background-color: var(--btn-green-color);
+  color: $white;
+}
+
+.btnStart:hover,
+.btnAdd:hover {
+  background-color: $green89;
+}
+
+.btnStop {
+  padding: 17px 48px;
+  border:  2px solid $orangeDC;
+  background-color: transparent;
+  color: $orangeDC;
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.btnStop:hover {
+  color: $white;
+  background-color: $orangeDC;
+}
+
+.btnStart,
+.btnStop {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  font-family: 'SF UI Display';
+}
+
+.nonActive {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+@media (max-width: 1439px) {
+  .box {
+    margin-bottom: 13%;
+  }
+}
+
+@media (max-width: 667px) {
+  .box {
+    margin-bottom: 35px;
+    padding: 0 65px;
+  }
+
+  .btnStart,
+  .btnStop {
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .btnStart {
+    padding: 13px 35px;
+  }
+
+  .btnStop {
+    padding: 11px 33px;
+  }
+
+  .task {
+    margin-bottom: 20px;
+    max-width: 280px;
+  }
+
+  .btnAdd {
+    right: 15px;
+    top: 45px;
+    background-color: var(--btn-gray-color);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+  }
+
+  .plus::after,
+  .plus::before {
+    top: 11px;
+    left: 17px;
+    width: 2px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    margin-bottom: 20px;
+    padding: 0 0;
+  }
+
+  .boxTask {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 280px;
+  }
+
+  .btnAdd {
+    position: static;
+    display: block;
+    width: 36px;
+    height: 36px;
+  }
+
+  .task {
+    margin-bottom: 0;
+    margin-right: 20px;
+    flex: 1 1;
+  }
+}

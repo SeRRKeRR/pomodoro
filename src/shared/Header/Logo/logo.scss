@@ -1,0 +1,26 @@
+@import '../../../variables.global.scss';
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin-left: 12px;
+  color: $orangeDC;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@media (max-width: 667px) {
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

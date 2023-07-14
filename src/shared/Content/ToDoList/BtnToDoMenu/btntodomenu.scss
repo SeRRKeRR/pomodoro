@@ -1,0 +1,35 @@
+@import '../../../../variables.global.scss';
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.btn:hover .circle {
+  background-color: $green89;
+}
+
+.circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $grayC4;
+  transition: background-color 0.2s ease-in-out;
+}
+
+@media (max-width: 667px) {
+  .btn {
+    width: 18px;
+    height: 18px;
+  }
+
+  .circle {
+    width: 4px;
+    height: 4px;
+  }
+}

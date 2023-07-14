@@ -1,0 +1,77 @@
+@import '../../../../variables.global.scss';
+
+.btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 10.83%;
+  height: 100%;
+  font-family: 'SF UI Display';
+}
+
+.backColor {
+  width: 100%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.orange {
+  background-color: $orangeEA;
+}
+
+.gray {
+  background-color: $grayC4;
+}
+
+.day {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 100%;
+  bottom: -51px;
+  color: $gray99;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  transition: color 0.2s ease-in-out;
+}
+
+.btn:hover .backColor {
+  background-color: $orangeEE;
+}
+
+.btn:hover .day {
+  color: $orangeEE;
+}
+
+.active {
+  background-color: var(--btn-orange-color);
+}
+
+.active + .day {
+  color: var(--btn-orange-color);
+}
+
+.btn:hover .active {
+  background-color: var(--btn-orange-color);
+}
+
+.btn:hover .active + .day {
+  color: var(--btn-orange-color);
+}
+
+@media (max-width: 768px) {
+  .day {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .day {
+    bottom: -40px;
+  }
+}
